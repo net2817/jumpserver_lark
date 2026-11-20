@@ -10,7 +10,7 @@
     LARK_HOST                      默认 https://open.feishu.cn（国际版 https://open.larksuite.com）
     LARK_VERIFICATION_TOKEN        可选（事件订阅若启用校验 token）
     RELAY_SECRET                   与 JumpServer JMS_IM_RELAY_SECRET 一致（可选）
-    JMS_SITE_URL                   默认 https://149.104.168.55:8443
+    JMS_SITE_URL                   默认 
     LISTEN                         默认 0.0.0.0:8000
 """
 
@@ -37,7 +37,7 @@ LARK_APP_SECRET = os.environ.get("LARK_APP_SECRET", "").strip()
 LARK_HOST = os.environ.get("LARK_HOST", "https://open.feishu.cn").rstrip("/")
 LARK_VERIFY_TOKEN = os.environ.get("LARK_VERIFICATION_TOKEN", "").strip()
 RELAY_SECRET = os.environ.get("RELAY_SECRET", "").strip()
-JMS_SITE_URL = os.environ.get("JMS_SITE_URL", "https://149.104.168.55:8443").rstrip("/")
+JMS_SITE_URL = os.environ.get("JMS_SITE_URL", "https://*.*.*.*:8443").rstrip("/")
 
 _URL_RE = re.compile(r"https?://[^\s)>）\"']+/tickets/direct-approve/([A-Za-z0-9]+)/?")
 
