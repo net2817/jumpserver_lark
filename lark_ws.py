@@ -27,7 +27,7 @@ from lark_oapi.event.callback.model.p2_card_action_trigger import (
 APP_ID = os.environ.get("LARK_APP_ID", "").strip()
 APP_SECRET = os.environ.get("LARK_APP_SECRET", "").strip()
 LARK_DOMAIN = os.environ.get("LARK_DOMAIN", "https://open.feishu.cn").rstrip("/")
-JMS_SITE_URL = os.environ.get("JMS_SITE_URL", "https://149.104.168.55:8443").rstrip("/")
+JMS_SITE_URL = os.environ.get("JMS_SITE_URL", "https://*.*.*.*:8443").rstrip("/")
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
