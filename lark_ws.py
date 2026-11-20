@@ -2,7 +2,7 @@
 """飞书长连接回调 worker：接收 card.action.trigger（按钮点击），调 JumpServer 直审批。
 
 依赖：pip install lark-oapi
-环境变量：LARK_APP_ID / LARK_APP_SECRET / JMS_SITE_URL（默认 https://149.104.168.55:8443）
+环境变量：LARK_APP_ID / LARK_APP_SECRET / JMS_SITE_URL
 """
 
 from __future__ import annotations
